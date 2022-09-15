@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> MCNainggolan </title>
-        <link rel="icon" type="x-icon" href="favicon.ico">
+        <title>learn HTML form</title>
     </head>
-    <body background ="animee.jpeg">
-        <p style="color:violet; text-align: center; font-size: 600%;"><i>Welcome</i></p>
+    <body>
+        <h1>We learn the </h1>
 
-        <h1 style="color:aqua; font-size: 200%; text-align: center"><sub>
-        </sub></h1>
-        
+        <form action="savedata.php" method="post">
+            <label for="fname">FirstName:</label> <br>
+            <input type="text" id="fname" name="fname" placeholder="Please type your first name here" size="50"> <br>
+
+            <label for="lname">Last name:</label> <br>
+            <input type="text" id="lanme" name="lname" placeholder="please type your last name here" size="50"> <br>
+
+            <label for="password">Passowrd:</label> <br>
+            <input id="password" type="password" name="password"> <br>
+
+            <p>Choose your favourite color</p>
+            <input type="color">
+
+            <p> Sex: </p>
+            <input type="radio" id="male" name="sex" value="male" checked>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex">
+            <label for="female">Female</label>
+
+            <p>Hobbies</p>
+            <input type="checkbox" name="hobbies" id="games" value="games" checked>
+            <label for="games">Games</label> <br>
+            <input type="checkbox" name="hobbies" id="reading" value="reading">
+            <label for="reading">Reading</label> <br>
+            <input type="checkbox" name="hobbies" id="singing" value="singing">
+            <label>Singing</label>
+
+            <p>Choose your favourite IT brand</p>
+            <select name="itbrand" size="3" multiple>
+                <option value="samsung">Samsung</option>
+                <option value="nokia">Nokia</option>
+                <option value="intel">Intel</option>
+                <option value="lenovo" selected>Lenovo</option>
+            </select>
+
+            <p>please write your comment below: </p>
+
+            <textarea name="comment" rows="5" cols="30"> Type your comment here
+            </textarea>
+            <br><br>
+
+            <input type="submit" value="Save">
+
+        </form>
+
     </body>
 </html>
